@@ -1,11 +1,25 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .skills {
+  padding: $gap-sm;
+
   &__title {
     display: none;
   }
-}
 
-&__actions {
-}
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    grid-auto-rows: calc(33.33333vh - 13.333333px);
+    gap: $gap-sm;
+    margin-bottom: $gap;
+  }
 
-&__container {
+  &__actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $gap-lg;
+  }
 }
