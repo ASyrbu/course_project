@@ -472,8 +472,11 @@ input:focus {
 }
 .skills__container {
   display: grid;
-
   margin-bottom: 20px;
+}
+
+.skills__title {
+  display: none;
 }
 
 .skill-item {
